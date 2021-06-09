@@ -10,17 +10,22 @@
           <section>
             <rule>
               <match>
+<<<<<<< HEAD
                 <AND>
                   <NAME>xmlns:android</NAME>
                   <XML_ATTRIBUTE />
                   <XML_NAMESPACE>^$</XML_NAMESPACE>
                 </AND>
+=======
+                <NAME>xmlns:.*</NAME>
+>>>>>>> upstream/master
               </match>
             </rule>
           </section>
           <section>
             <rule>
               <match>
+<<<<<<< HEAD
                 <AND>
                   <NAME>xmlns:.*</NAME>
                   <XML_ATTRIBUTE />
@@ -106,6 +111,9 @@
                   <XML_ATTRIBUTE />
                   <XML_NAMESPACE>.*</XML_NAMESPACE>
                 </AND>
+=======
+                <XML_ATTRIBUTE />
+>>>>>>> upstream/master
               </match>
               <order>BY_NAME</order>
             </rule>

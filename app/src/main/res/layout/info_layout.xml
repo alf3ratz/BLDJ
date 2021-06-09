@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@color/app_color"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <Button
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_arrow"
+                android:drawablePadding="22dp"
+                android:gravity="start|center"
+                android:id="@+id/back_button"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:text="@string/spravka"
+                android:textColor="@color/text_default"
+                android:textAllCaps="false"
+                android:textSize="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+                android:background="@color/text_default"
+                android:id="@+id/line_back"
+                android:layout_height="1dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/back_button" />
+
+        <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/version"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_width="match_parent"
+                android:text="@string/version"
+                android:textSize="11sp"
+                android:textColor="@color/text_greyBlack"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line_back" />
+
+        <ImageView
+                android:id="@+id/logo_icon"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="31dp"
+                android:layout_width="wrap_content"
+
+                android:src="@drawable/logo_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/version" />
+
+        <ImageView
+                android:id="@+id/bldj"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="11dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_bldj"
+                app:layout_constraintLeft_toRightOf="@id/logo_icon"
+                app:layout_constraintTop_toTopOf="@id/logo_icon" />
+
+        <TextView
+                android:id="@+id/find_travellers"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:text="@string/find_travelers"
+                android:textColor="@color/text_greyBlack"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/logo_icon"
+                app:layout_constraintTop_toBottomOf="@id/bldj" />
+
+        <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/text_developers"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="217dp"
+                android:layout_width="match_parent"
+                android:text="@string/developers_team"
+                android:textSize="14sp"
+                android:textColor="@color/text_greyBlack"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/find_travellers" />
+
+        <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/andrey"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_width="match_parent"
+                android:text="@string/and_p"
+                android:textColor="@color/text_default"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_developers" />
+
+        <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/daniil"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/dan_e"
+                android:textColor="@color/text_default"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/andrey" />
+
+        <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/eduard"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/ed_n"
+                android:textColor="@color/text_default"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daniil" />
+
+        <ImageButton
+                android:background="@drawable/roundcorner"
+                android:id="@+id/telegram"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="22dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/telegram_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/eduard" />
+
+        <ImageButton
+                android:background="@drawable/roundcorner"
+                android:id="@+id/google"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="22dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/google_icon"
+                app:layout_constraintLeft_toRightOf="@id/telegram"
+                app:layout_constraintTop_toBottomOf="@id/eduard" />
+
+        <ImageButton
+                android:background="@drawable/roundcorner"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="22dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/discord_icon"
+                app:layout_constraintLeft_toRightOf="@id/google"
+                app:layout_constraintTop_toBottomOf="@id/eduard" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
